@@ -1,0 +1,141 @@
+/* Header Container */
+.header {
+  background-color: #1a237e;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Upper Header */
+.upper-header {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.logo-img {
+  background-color: white;
+  height: 70px;
+  width: auto;
+}
+
+.title-container h1 {
+  font-size: 1.5rem;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.title-container p {
+  font-size: 0.9rem;
+  margin-left: 20px;
+  opacity: 0.8;
+}
+
+.azadi-img{
+  background-color: white;
+  height: 70px;
+  width: auto;
+  margin-left: 600px;
+}
+
+/* Lower Header */
+.lower-header {
+  /* background-color: #f5f5f5; */
+  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* .search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-container input {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 250px;
+}
+
+.search-container button {
+  padding: 8px 15px;
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+} */
+
+.menu-options {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-btn{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: transparent;
+  color: white;
+  transition: all 0.3s;
+}
+
+
+.menu-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+.login{
+  padding: 8px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #ff5722;
+  color: white;
+  transition: all 0.3s;
+}
+
+.login:hover {
+  background-color: #e64a19;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .menu-options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

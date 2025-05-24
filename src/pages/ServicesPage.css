@@ -1,0 +1,144 @@
+.services-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .services-hero {
+    /* background: linear-gradient(rgba(26, 35, 126, 0.9), rgba(26, 35, 126, 0.9)), 
+                url('/images/services-bg.jpg'); */
+    background: linear-gradient(rgba(26, 35, 126, 0.6), rgba(26, 35, 126, 0.6)), 
+            url('about-hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  
+  .services-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .services-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+  }
+  
+  .service-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon-container {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(26, 35, 126, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .service-icon {
+    font-size: 1.8rem;
+    color: #1a237e;
+  }
+  
+  .service-card h3 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+  
+  .service-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .service-link {
+    color: #1a237e;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .service-link:hover {
+    text-decoration: underline;
+  }
+  
+  .service-link::after {
+    content: '→';
+    margin-left: 5px;
+    transition: transform 0.3s;
+  }
+  
+  .service-link:hover::after {
+    transform: translateX(3px);
+  }
+  
+  .emergency-banner {
+    background-color: #e53935;
+    color: white;
+    padding: 2rem;
+    margin-top: 3rem;
+  }
+  
+  .emergency-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .emergency-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .emergency-contact {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .emergency-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .services-container {
+      grid-template-columns: 1fr;
+    }
+    
+    .services-hero h1 {
+      font-size: 2rem;
+    }
+    
+    .emergency-number {
+      font-size: 2rem;
+    }
+  }

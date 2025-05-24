@@ -1,0 +1,60 @@
+.crime-stats {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .crime-stats h2 {
+    color: #1a237e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+  }
+  
+  .stats-container {
+    /* display: grid; */
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  
+  .chart-container {
+    height: 350px;
+  }
+  
+  .about-section {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+  }
+  
+  .about-section h3 {
+    color: #1a237e;
+    margin-bottom: 15px;
+  }
+  
+  .about-section p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .links a {
+    color: #ff5722;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .stats-container {
+      grid-template-columns: 1fr;
+    }
+  }
